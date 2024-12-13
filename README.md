@@ -1,2 +1,2 @@
-# syngenity-common-service
+# common-service
 Repository for syngenity common service
