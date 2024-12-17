@@ -9,8 +9,8 @@
         <!-- Authentication for GitHub Packages -->
         <server>
             <id>github</id>
-            <username>rajeshchettupalli-achala</username>
-            <password>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</password>
+            <username>${env.GITHUB_ACTOR}</username>
+            <password>${ env.GITHUB_TOKEN }</password>
         </server>
     </servers>
 
