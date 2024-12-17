@@ -21,9 +21,6 @@ jobs:
           java-version: '17'
           distribution: 'zulu'
 
-      - name: Copy settings.xml to default Maven location
-        run: cp .github/workflows/settings.xml ~/.m2/settings.xml
-
       - name: Grant execute permission to Maven Wrapper
         run: chmod +x ./mvnw
 
