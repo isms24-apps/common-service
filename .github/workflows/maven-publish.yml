@@ -24,7 +24,7 @@ jobs:
           settings-path: settings.xml
 
       - name: Publish package
-        run: mvnw deploy
+        run: ./mvnw deploy
         env:
           GITHUB_TOKEN: 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
           GITHUB_ACTOR: rajeshchettupalli-achala
