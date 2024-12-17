@@ -27,10 +27,6 @@ jobs:
       - name: Grant execute permission to Maven Wrapper
         run: chmod +x ./mvnw
 
-      - name: Print Token
-        run: |
-          echo "Token=${{ secrets.TOKEN }}"      
-
       - name: Publish package
         run: ./mvnw deploy
         env:
