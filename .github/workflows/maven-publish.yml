@@ -27,7 +27,7 @@ jobs:
         run: chmod +x ./mvnw
 
       - name: Publish package
-        run: ./mvnw deploy
+        run: ./mvnw deploy -s settings.xml
         env:
           GITHUB_TOKEN: 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
           GITHUB_ACTOR: rajeshchettupalli-achala
