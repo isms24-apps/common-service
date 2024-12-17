@@ -20,14 +20,15 @@ jobs:
         with:
           java-version: '17'
           distribution: 'zulu'
-          server-id: github
-          settings-path: settings.xml
+
+      - name: Copy settings.xml to default Maven location
+        run: cp .github/workflows/settings.xml ~/.m2/settings.xml
 
       - name: Grant execute permission to Maven Wrapper
         run: chmod +x ./mvnw
 
       - name: Publish package
-        run: ./mvnw deploy -s settings.xml
+        run: ./mvnw deploy
         env:
           GITHUB_TOKEN: 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
           GITHUB_ACTOR: rajeshchettupalli-achala
