@@ -23,6 +23,9 @@ jobs:
           server-id: github
           settings-path: settings.xml
 
+      - name: Grant execute permission to Maven Wrapper
+        run: chmod +x ./mvnw
+
       - name: Publish package
         run: ./mvnw deploy
         env:
