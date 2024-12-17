@@ -20,9 +20,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'zulu'
+          server-id: github
+          settings-path: settings.xml
 
       - name: Publish package
         run: mvn deploy
         env:
           GITHUB_TOKEN: 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
-          GITHUB_ACTOR: rajesh.chettupalli@achalasolutions.com
+          GITHUB_ACTOR: rajeshchettupalli-achala

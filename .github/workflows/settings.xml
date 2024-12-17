@@ -9,7 +9,7 @@
         <!-- Authentication for GitHub Packages -->
         <server>
             <id>github</id>
-            <username>rajesh.chettupalli@achalasolutions.com</username>
+            <username>rajeshchettupalli-achala</username>
             <password>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</password>
         </server>
     </servers>
