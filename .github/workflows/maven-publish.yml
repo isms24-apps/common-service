@@ -22,6 +22,6 @@ jobs:
           distribution: 'zulu'
 
       - name: Publish package
-        run: ./mvnw deploy
+        run: mvn deploy
         env:
           GITHUB_TOKEN: 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
