@@ -27,5 +27,5 @@ jobs:
       - name: Publish package
         run: ./mvnw deploy
         env:
-          GITHUB_TOKEN: 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
-          GITHUB_ACTOR: JayasriChinthala
+          GITHUB_TOKEN: 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
+          GITHUB_ACTOR: rajeshchettupalli-achala
