@@ -20,12 +20,15 @@ jobs:
         with:
           java-version: '17'
           distribution: 'zulu'
+          
+      - name: Ensure Settings File Permissions
+        run: chmod 600 .github/workflows/settings.xml
 
       - name: Grant execute permission to Maven Wrapper
         run: chmod +x ./mvnw
 
-      - name: Publish package
-        run: ./mvnw deploy
+      - name: Publish Package
+        run: ./mvnw deploy -s .github/workflows/settings.xml -X
         env:
           GITHUB_TOKEN: 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
           GITHUB_ACTOR: rajeshchettupalli-achala
